@@ -1,5 +1,5 @@
-from chiffrement import chiffrement
-from dechiffrement import dechiffrement
+from chiffrement import *
+from dechiffrement import *
 
 choix = input("Souhaitez vous de [c]hiffrer ou [d]echiffrer un message?")
 if choix == "c":
@@ -11,3 +11,6 @@ elif choix == "d":
     msg = input("Entrez le message a dechiffrer (en lettres capitales, sans espace ni ponctuation) :")
     msg_clair = dechiffrement(msg)
     print(f"Le message en clair est {msg_clair}.")
+    break
+else:
+    print("Recommencez s'il vous plaît.")
